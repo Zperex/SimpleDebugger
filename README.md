@@ -1,102 +1,49 @@
-
 # Trace Tracker
-
-## Overview
 
 Trace Tracker is a simple C project designed to track the values of variables during program execution. It provides functions to add, update, display, and remove variables from a trace array, making it easier to debug and monitor variable states throughout a program's lifecycle.
 
 ## Features
 
-**Add variables to the trace array**
+- **Add Variables:** Easily add variables to the trace array for monitoring.
+- **Update Values:** Update variable values within the trace array as your program executes.
+- **Display Values:** Conveniently display the current value of any tracked variable.
+- **Remove Variables:** Remove variables from the trace array when they are no longer needed.
 
-**Update variable values in the trace array**
+## Files
 
-**Display the current value of any tracked variable**
+- **main.c:** Contains the main function demonstrating the usage of tracing functions.
+- **debug.c:** Implements the tracing functions.
+- **debug.h:** Header file defining the tracing functions.
 
-**Remove variables from the trace array**
+## How to Use
 
-##Files
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/your-username/trace-tracker.git
+    cd trace-tracker
+    ```
 
-**main.c**: Contains the main function which demonstrates how to use the tracing functions.
-**debug.c**: Contains the implementation of the tracing functions.
-**debug.h**: Header file for the tracing functions.
-How to Use
+2. **Compile the Program:**
+    ```bash
+    gcc main.c debug.c -o trace_tracker
+    ```
 
-## Clone the repository:
+3. **Run the Program:**
+    ```bash
+    ./trace_tracker
+    ```
 
-bash
-Copy code
-git clone https://github.com/your-username/trace-tracker.git
-cd trace-tracker
-Compile the program:
-
-bash
-Copy code
-gcc main.c debug.c -o trace_tracker
-Run the program:
-
-bash
-Copy code
-./trace_tracker
-Example
-
-Here's an example usage of the tracing functions as shown in main.c:
-
-c
-Copy code
-#include <stdio.h>
-#include <stdlib.h>
-#include "debug.h"
-
-int main() {
-    int a, b;
-
-    add_TT('a');
-    add_TT('b');
-
-    display_TT('a');
-    display_TT('b');
-
-    b = 0;
-    update_TT('b', b);
-
-    a = 1;
-    update_TT('a', a);
-
-    while (b < 10) {
-        a = a + b;
-        update_TT('a', a);
-
-        b = b + 1;
-        update_TT('b', b);
-
-        display_TT('b');
-    }
-
-    remove_TT('a');
-    display_TT('a');
-
-    remove_TT('b');
-    display_TT('b');
-
-    return 0;
-}
 ## Function Descriptions
 
-**void add_TT(char var)**:Adds a new variable to the trace array with an initial value of 0.
-
-**void display_TT(char var)**:Displays the current value of the specified variable from the trace array.;
-
-**void update_TT(char var, int val)**:Updates the value of the specified variable in the trace array.
-
-**void remove_TT(char var)**:Removes the specified variable from the trace array.
+- **`add_TT(char var)`:** Adds a new variable to the trace array with an initial value of 0.
+- **`display_TT(char var)`:** Displays the current value of the specified variable from the trace array.
+- **`update_TT(char var, int val)`:** Updates the value of the specified variable in the trace array.
+- **`remove_TT(char var)`:** Removes the specified variable from the trace array.
 
 ## Contribution
 
-Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure your code follows the existing style and include relevant tests.
+Contributions are welcomed! If you have improvements or fixes, fork the repository, make your changes, and submit a pull request. Please ensure your code adheres to the existing style and include relevant tests.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
