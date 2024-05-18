@@ -7,21 +7,22 @@ Trace Tracker is a simple C project designed to track the values of variables du
 
 ## Features
 
--**Add variables to the trace array**
+**Add variables to the trace array**
 
--**Update variable values in the trace array**
+**Update variable values in the trace array**
 
--**Display the current value of any tracked variable**
+**Display the current value of any tracked variable**
 
--**Remove variables from the trace array
-Files**
+**Remove variables from the trace array**
 
-main.c: Contains the main function which demonstrates how to use the tracing functions.
-debug.c: Contains the implementation of the tracing functions.
-debug.h: Header file for the tracing functions.
+##Files
+
+**main.c**: Contains the main function which demonstrates how to use the tracing functions.
+**debug.c**: Contains the implementation of the tracing functions.
+**debug.h**: Header file for the tracing functions.
 How to Use
 
-Clone the repository:
+## Clone the repository:
 
 bash
 Copy code
@@ -80,40 +81,22 @@ int main() {
 
     return 0;
 }
-Function Descriptions
+## Function Descriptions
 
-add_TT
-Adds a new variable to the trace array with an initial value of 0.
+**void add_TT(char var)**:Adds a new variable to the trace array with an initial value of 0.
 
-c
-Copy code
-void add_TT(char var);
-display_TT
-Displays the current value of the specified variable from the trace array.
+**void display_TT(char var)**:Displays the current value of the specified variable from the trace array.;
 
-c
-Copy code
-void display_TT(char var);
-update_TT
-Updates the value of the specified variable in the trace array.
+**void update_TT(char var, int val)**:Updates the value of the specified variable in the trace array.
 
-c
-Copy code
-void update_TT(char var, int val);
-remove_TT
-Removes the specified variable from the trace array.
+**void remove_TT(char var)**:Removes the specified variable from the trace array.
 
-c
-Copy code
-void remove_TT(char var);
-Contribution
+## Contribution
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure your code follows the existing style and include relevant tests.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Contact
 
-If you have any questions, feel free to open an issue or contact the project maintainer at your-email@example.com.
