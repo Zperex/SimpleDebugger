@@ -32,7 +32,7 @@ Trace Tracker is a simple C project designed to track the values of variables du
     ```bash
     ./trace_tracker
     ```
-
+![Trace Tracker](Trace Tracker.png)
 ## Function Descriptions
 
 - **`add_TT(char var)`:** Adds a new variable to the trace array with an initial value of 0.
