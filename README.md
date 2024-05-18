@@ -1,17 +1,17 @@
 
-Trace Tracker
+# Trace Tracker
 
-Overview
+## Overview
 
 Trace Tracker is a simple C project designed to track the values of variables during program execution. It provides functions to add, update, display, and remove variables from a trace array, making it easier to debug and monitor variable states throughout a program's lifecycle.
 
-Features
+## Features
 
-Add variables to the trace array
-Update variable values in the trace array
-Display the current value of any tracked variable
-Remove variables from the trace array
-Files
+**Add variables to the trace array**
+**Update variable values in the trace array**
+**Display the current value of any tracked variable**
+**Remove variables from the trace array
+Files**
 
 main.c: Contains the main function which demonstrates how to use the tracing functions.
 debug.c: Contains the implementation of the tracing functions.
