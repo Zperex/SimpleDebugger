@@ -8,8 +8,11 @@ Trace Tracker is a simple C project designed to track the values of variables du
 ## Features
 
 -**Add variables to the trace array**
+
 -**Update variable values in the trace array**
+
 -**Display the current value of any tracked variable**
+
 -**Remove variables from the trace array
 Files**
 
